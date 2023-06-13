@@ -1,0 +1,4 @@
+FROM openjdk:11
+COPY target/src.srccode.RBPIC.jar /app/src.srccode.RBPIC.jar
+WORKDIR /app
+CMD ["java", "-jar", "src.srccode.RBPIC.jar"]
